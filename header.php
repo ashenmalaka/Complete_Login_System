@@ -26,9 +26,9 @@
     </nav>
 
     <div>
-        <form action="includes/login.php" method="post">
+        <form action="includes/login_inc.php" method="post">
             <input type="text" name="email_id" placeholder="Username/E-mail...">
-            <input type="password" name="password_id" placeholder="Password...">
+            <input type="password" name="password_submit" placeholder="Password...">
             <button type="button" name="login_submit">Login</button>
         </form>
         <a href="signup.php">Sign Up</a>
