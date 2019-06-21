@@ -2,8 +2,12 @@
   <dictionary name="Ashen Malaka">
     <words>
       <w>emptyfields</w>
+      <w>invalidid</w>
+      <w>invalidmail</w>
+      <w>invalidmailid</w>
       <w>loging</w>
       <w>logingsystem</w>
+      <w>passwordcheck</w>
       <w>signup</w>
     </words>
   </dictionary>
