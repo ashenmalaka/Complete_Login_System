@@ -9,7 +9,7 @@ require "header.php";
         <section>
             <h1>Sign Up</h1>
             <form action="includes/signup_inc.php" method="post">
-                <input type="text" name="user_id" placeholder="Username">
+                <input type="text" name="id_user" placeholder="Username">
                 <input type="text" name="mail" placeholder="Email">
                 <input type="password" name="pwd" placeholder="Password">
                 <input type="password" name="pwd_repeat" placeholder="Repeat Password">
