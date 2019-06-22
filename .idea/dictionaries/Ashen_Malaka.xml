@@ -7,9 +7,11 @@
       <w>invalidmailid</w>
       <w>loging</w>
       <w>logingsystem</w>
+      <w>nouser</w>
       <w>passwordcheck</w>
       <w>signup</w>
       <w>usertaken</w>
+      <w>wrongpassword</w>
     </words>
   </dictionary>
 </component>
