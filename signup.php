@@ -8,6 +8,13 @@ require "header.php";
     <div>
         <section>
             <h1>Sign Up</h1>
+            <?php
+            if(isset($_GET['error'])){
+                if($_GET['error'] == "emptyfields"){
+                    echo '<p>Fill in all fields</p>';
+                }
+            }
+            ?>
             <form action="includes/signup_inc.php" method="post">
                 <input type="text" name="id_user" placeholder="Username">
                 <input type="text" name="mail" placeholder="Email">
