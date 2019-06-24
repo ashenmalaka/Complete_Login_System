@@ -4,8 +4,8 @@ if(isset($_POST['login_submit'])){
 
     require 'database_handler.php';
 
-    $mailId = $_POST['mail'];
-    $password = $_POST['pwd'];
+    $mailId = $_POST['emailid'];
+    $password = $_POST['passwordsubmit'];
 
     if(empty($mailId) || empty($password)){
         header("Location: ../index.php?error=emptyfields");
@@ -19,7 +19,7 @@ if(isset($_POST['login_submit'])){
             exit();
         }
         else{
-            mysqli_stmt_bind_param($stmt, "ss", $mailId, $mailId);
+            mysqli_stmt_bind_param($stmt, "ss", $mailId,$mailId);
             mysqli_stmt_execute($stmt);
             $result = mysqli_stmt_get_result($stmt);
             if($row = mysqli_fetch_assoc($result)){
@@ -40,18 +40,13 @@ if(isset($_POST['login_submit'])){
                     header("Location: ../index.php?error=wrongpassword");
                     exit();
                 }
-
             }
             else{
                 header("Location: ../index.php?error=nouser");
                 exit();
             }
-
-
         }
-
     }
-
 }
 else{
     header("Location: ../index.php");

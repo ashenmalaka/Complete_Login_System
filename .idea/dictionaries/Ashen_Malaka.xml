@@ -1,6 +1,7 @@
 <component name="ProjectDictionaryState">
   <dictionary name="Ashen Malaka">
     <words>
+      <w>emailid</w>
       <w>emptyfields</w>
       <w>invalidid</w>
       <w>invalidmail</w>
@@ -9,6 +10,7 @@
       <w>logingsystem</w>
       <w>nouser</w>
       <w>passwordcheck</w>
+      <w>passwordsubmit</w>
       <w>signup</w>
       <w>usertaken</w>
       <w>wrongpassword</w>

@@ -31,16 +31,21 @@ session_start();
     </nav>
 
     <div>
-        <form action="includes/login_inc.php" method="post">
-            <input type="text" name="email_id" placeholder="Username/E-mail...">
-            <input type="password" name="password_submit" placeholder="Password...">
-            <button type="button" name="login_submit">Login</button>
-        </form>
-        <a href="signup.php">Sign Up</a>
-
-        <form action="includes/logout.php" method="post">
-            <button type="button" name="logout_submit">Logout</button>
-        </form>
+        <?php
+        if(isset($_SESSION['userId'])){
+            echo '<form action="includes/logout.php" method="post">
+                  <button type="button" name="logout_submit">Logout</button>
+                  </form>';
+        }
+        else{
+            echo '<form action="includes/login_inc.php" method="post">
+                    <input type="text" name="emailid" placeholder="Username/Email...">
+                    <input type="password" name="passwordsubmit" placeholder="Password...">
+                    <button type="button" name="login_submit">Login</button>
+                  </form>
+                  <a href="signup.php">Sign Up</a>';
+        }
+        ?>
     </div>
 
 </header>
