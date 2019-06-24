@@ -29,7 +29,7 @@ require "header.php";
                     echo '<p>Username is already taken...!</p>';
                 }
             }
-            else if($_GET['signup'] == "success"){
+            else if(isset($_GET['signup']) == "success"){
                 echo '<p>Sign Up is successful...!</p>';
             }
             ?>
