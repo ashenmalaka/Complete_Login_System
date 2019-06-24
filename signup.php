@@ -13,6 +13,24 @@ require "header.php";
                 if($_GET['error'] == "emptyfields"){
                     echo '<p>Fill in all fields</p>';
                 }
+                else if($_GET['error'] == "invalidmailid_user"){
+                    echo '<p>Invalid username and E-mail...!</p>';
+                }
+                else if($_GET['error'] == "invalidid_user"){
+                    echo '<p>Invalid username...!</p>';
+                }
+                else if($_GET['error'] == "invalidmail"){
+                    echo '<p>Invalid E-mail...!</p>';
+                }
+                else if($_GET['error'] == "passwordcheck"){
+                    echo '<p>Entered passwords do not match...!</p>';
+                }
+                else if($_GET['error'] == "usertaken"){
+                    echo '<p>Username is already taken...!</p>';
+                }
+            }
+            else if($_GET['signup'] == "success"){
+                echo '<p>Sign Up is successful...!</p>';
             }
             ?>
             <form action="includes/signup_inc.php" method="post">
