@@ -9,7 +9,7 @@ session_start();
     <meta charset="utf-8">
     <meta name="description" content="This is an example for a logging system using PHP">
     <meta name=viewport content="width=device-width, initial-scale=1">
-<title>Complete Logging System</title>
+<title>Complete Loging System</title>
 
 </head>
 <body>
@@ -33,7 +33,7 @@ session_start();
     <div>
         <?php
         if(isset($_SESSION['userId'])){
-            echo '<form action="includes/logout.php" method="post">
+            echo '<form action="includes/logout_inc.php" method="post">
                   <button type="button" name="logout_submit">Logout</button>
                   </form>';
         }
